@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(47,53,69) ;
+    padding: 0;
+    margin: 0;
+    
+    
+  }
+
+
+  .bgi{
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            filter: brightness(100%);
+            filter: opacity(10%);
+            /* filter: grayscale(100%); */
+        }
+
+
+
+  /* Navbar container */
+  .navbar {
+    /* background-color: #333333; Dark background color */
+    
+    overflow: hidden;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex; /* Use flexbox for layout */
+    align-items: center;
+    justify-content: space-between; /* Distribute space between items */
+  }
+
+
+
+  /* Logo */
+  .navbar img {
+    height: 40px; /* Set the height of the logo */
+    vertical-align: middle; /* Align logo vertically in the navbar */
+  }
+
+
+  .navbar a {
+    color: #FFFFFF ; /* Text color */
+    text-align: center; /* Center-align text */
+    padding: 14px 20px; 
+    font-weight:400;
+    text-decoration: none; /* Remove underline from links */
+    font-size: 25px;
+  }
+
+
+  .navbar a:hover {
+    /* background-color: #ddd; Light background color */
+    color: #C99331;
+     /* Change text color on hover */
+     /* color: #0066CC; */
+  }
+
+  .navbar .home,.contact,.exp,.about{
+    transform: scale(1.1);
+  }
+
+
+  .container{
+    display: flex;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: space-around;
+    /* align-items: center; */
+    
+  }
+
+
+.container .right{
+    margin-top: 30px;
+}
+.container .left{
+   align-items: center;
+   border: 5px solid #C99331;
+    /* border: 10px outset #C99331; */
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 50vh;
+    color: white;
+    padding-left: 50px;
+    /* border: 2px solid black; */
+    margin-top: 100px;
+    justify-content: center;
+    /* margin: 0; */
+    /* background-color: rgba(255, 255, 255, 0.2); Semi-transparent white */
+    backdrop-filter: blur(10px); /* Blur effect */
+    border-radius: 10px;
+    /* box-shadow: 0 10px 10px color: #C99331 ; 0 1px 3px color: #C99331; Box shadow for depth */
+    transition: transform 0.9s ease;
+}
+
+.container .left:hover{
+    transform: scale(1.03);
+    
+    
+}
+
+
+.name{
+     font-family: "Baskervville", serif;
+}
+
+.welcome{
+    border: 2px white solid;
+    border-radius: 10px;
+    height: 80%;
+    font-size: large;
+}
+
+
+
+  .foot{
+    /* background-color: #333333;  */
+    color: #D3D3D3; 
+    text-align:center; 
+    padding:5px;
+    width:100vw;
+    position: fixed;
+    bottom: 0px;
+    height: auto;
+    
+  }
+  .rotate {
+  animation: rotation 3s;
+}
+@keyframes rotation {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(359deg);
+  }
+}
+.linear {
+  animation-timing-function: linear;
+}
+.infinite {
+  animation-iteration-count: infinite;
+}
+
+.foot {
+    position: relative;
+    /* left: 0; */
+    bottom: 0;
+    width: 100%;
+    /* background-color: #333; */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+.text{
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+    typing 6s steps(15),
+    cursor .4s step-end infinite alternate;
+}
+
+
+@keyframes cursor {
+    50% { border-color: transparent}
+}
+
+@keyframes typing{
+    from { width: 0;}
+}
+
+/* CSS */
+/* Add this media query at the end of your CSS file */
+@media screen and (max-width: 800px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container .left {
+        width: 80%; /* Adjust width to fit smaller screens */
+        padding: 20px; /* Adjust padding for better spacing */
+        margin-top: 20px; /* Adjust margin for spacing */
+        border: none; /* Remove border */
+        text-align: center; /* Center align text */
+    }
+
+    .container .right {
+        margin-top: 20px; /* Adjust margin for spacing */
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar div {
+        margin-top: 10px; /* Adjust margin for spacing */
+    }
+
+    .navbar a {
+        display: block; /* Display links as block elements */
+        padding: 10px 0; /* Adjust padding for spacing */
+    }
+
+    .bgi {
+        position: absolute; /* Change position to absolute to ensure content is visible */
+        z-index: -1;
+    }
+
+    .foot {
+        position: relative; /* Change position to relative for proper positioning */
+    }
+}
