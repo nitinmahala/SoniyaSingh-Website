@@ -1,0 +1,214 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(47,53,69);
+  padding: 0;
+  margin: 0;
+}
+
+.bgi {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  filter: brightness(100%);
+  filter: opacity(10%);
+  /* filter: grayscale(100%); */
+}
+
+/* Navbar container */
+.navbar {
+  /* background-color: #333333; Dark background color */
+  
+  overflow: hidden;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex; /* Use flexbox for layout */
+  align-items: center;
+  justify-content: space-between; /* Distribute space between items */
+}
+
+/* Logo */
+.navbar img {
+  height: 40px; /* Set the height of the logo */
+  vertical-align: middle; /* Align logo vertically in the navbar */
+}
+
+.navbar a {
+  color: #FFFFFF; /* Text color */
+  text-align: center; /* Center-align text */
+  padding: 14px 20px; 
+  font-weight: 400;
+  text-decoration: none; /* Remove underline from links */
+  font-size: 25px;
+}
+
+.navbar a:hover {
+  /* background-color: #ddd; Light background color */
+  color: #C99331;
+   /* Change text color on hover */
+   /* color: #0066CC; */
+}
+
+.navbar .home,.contact,.exp,.about{
+  transform: scale(1.1);
+}
+
+.rotate {
+  animation: rotation 3s;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(359deg);
+  }
+}
+
+.linear {
+  animation-timing-function: linear;
+}
+
+.infinite {
+  animation-iteration-count: infinite;
+}
+
+.foot {
+  position: relative;
+  /* position: fixed; */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  /* background-color: #333; */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.member {
+  /* background-color: rgba(200, 255, 255, 0.2);  */
+  backdrop-filter: blur(10px); /* Blur effect */
+  border-radius: 10px;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); Box shadow for depth */
+  padding: 20px;
+  margin: 10px;
+  width: 250px;
+  height: 400px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+  /* filter: drop-shadow(10px 7px 10px orange); */
+  border: solid 1px #C99331;
+}
+
+.member:hover {
+  transform: translateY(-5px);
+}
+
+.member h2 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #41C9E2;
+}
+
+.member p {
+  margin: 0;
+  font-size: 14px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.member img {
+  width: 250px;
+  height: 130px;
+  /* border-radius: 50%; */
+  margin-bottom: 10px;
+  object-fit: fill; /* Ensure the image maintains aspect ratio */
+  /* filter: drop-shadow(0px 0px 10px  */
+}
+
+.heading {
+  text-align: center;
+  font-size: 25px;
+  font-family: "Baskervville", serif;
+  color: #C99331;
+  font-weight: bold;
+}
+
+.internship {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.member1 {
+  flex: 0 0 auto; /* Ensure flex items do not grow or shrink */
+  scroll-snap-align: start; /* Snap each card to the start of the viewport */
+  margin: 0 10px; /* Add margin between cards */
+  text-align: center;
+  transition: transform 0.3s ease;
+  /* filter: drop-shadow(10px 7px 10px orange); */
+  border: solid 1px #C99331;
+  backdrop-filter: blur(10px); /* Blur effect */
+  border-radius: 10px;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); Box shadow for depth */
+  padding: 20px;
+  margin: 10px;
+  width: 33vw;
+  height: 350px;
+}
+
+.recom {
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping of items */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  scroll-snap-type: x mandatory; /* Enable snap scrolling */
+  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+    text-align: center;
+  transition: transform 0.3s ease;
+  /* filter: drop-shadow(10px 7px 10px orange); */
+  /* border: solid 1px #C99331; */
+}
+
+.member1 img {
+  width: 33vw;
+  height: 20vh;
+  /* border-radius: 50%; */
+  margin-bottom: 10px;
+  object-fit: fill; /* Ensure the image maintains aspect ratio */
+  /* filter: drop-shadow(0px 0px 10px  */
+}
+
+.member1 p {
+  margin: 0;
+  font-size: 22px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+
+::-webkit-scrollbar {
+  width: 5px; /* width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  /* background: rgb(0, 195, 255); color of the track */
+  background-color: rgb(1,17,22); /* color of the thumb */
+}
+
+::-webkit-scrollbar-thumb {
+  /* background-color: rgb(1,17,22); color of the thumb */
+  background: #C99331; /* color of the track */
+  border-radius: 6px; /* roundness of the thumb */
+}
+
+.recom::-webkit-scrollbar-horizontal {
+  height: 5px; /* Set the height of the horizontal scrollbar */
+}
