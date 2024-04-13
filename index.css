@@ -21,20 +21,10 @@ body{
     height: 50px;
     width: 50px;
     margin-left: 10px;
-    animation: flip 2s infinite linear; /* Apply flip animation */
+    
 }
 
-@keyframes flip {
-    0% {
-        transform: rotateY(0deg);
-    }
-    50% {
-        transform: rotateY(180deg);
-    }
-    100% {
-        transform: rotateY(360deg);
-    }
-}
+
 
 
 .navbar-item li {
@@ -104,9 +94,10 @@ body{
     display: grid;
     height: 100;
     /* width: 50vw; */
-    margin-left: 10px;
+    margin-left: 70px;
     z-index: 1;
-     margin-bottom: 100px;
+    margin-bottom: 100px;
+    
    
 }
 
