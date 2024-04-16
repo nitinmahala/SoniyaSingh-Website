@@ -208,34 +208,6 @@ body{
 .right img{
     height: 100%;
 }
-@media (max-width: 800px) {
-    .right img {
-        display: none; /* Hide the image on mobile */
-    }
 
-    .container {
-        display: flex;
-        margin-top: 200px;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column; /* Align items vertically */
-        text-align: center; /* Center text content */
-    }
-
-    .name p {
-        margin-bottom: 20px; /* Increase bottom margin for better spacing */
-        text-align: center; /* Center text within the .name element */
-    }
-
-    .left {
-        text-align: center; /* Center content within the .left element */
-    }
-
-    .res button {
-        margin-top: 20px; /* Add top margin to the button for spacing */
-    }
-
-
-}
 
 
