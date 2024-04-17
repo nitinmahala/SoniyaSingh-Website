@@ -77,17 +77,16 @@ body{
 
 
 .container{
+    margin-top: 0px;
     display: grid;
     justify-content: center;
     align-items: center;
 }
 
 .up{
+    margin-top: 0px;
     margin-bottom: 0px;
-    font-size: 40px;
-    color: rgb(201,147,49);
-    font-family: "EB Garamond", serif;
-    font-weight: lighter;
+
     padding: 0px;
     display: flex;
     align-items: center;
@@ -95,7 +94,19 @@ body{
     
 }
 
+.photo img{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    height: 300px;
+}
 
+.heading{
+    text-align: center;
+    font-size: 80px;
+    color: rgb(201,147,49);
+    font-family: "EB Garamond", serif;
+    font-weight: lighter;
+}
 
 .low{
     display: flex;
